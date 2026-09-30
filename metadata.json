@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow - Collaborative Task & Sprint Manager",
+  "description": "A high-performance productivity workspace with drag-and-drop Kanban boards, team collaboration, priority tracking, due dates, and AI-powered automated daily summaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for Kanban horizontal view and long lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(163, 163, 163, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(115, 115, 115, 0.6);
+}
+
+/* Dragging visual helpers */
+.task-dragging {
+  opacity: 0.4;
+  transform: scale(0.98);
+}
+.drop-zone-active {
+  background-color: rgba(245, 245, 245, 0.8);
+  outline: 2px dashed rgba(115, 115, 115, 0.35);
+  outline-offset: -2px;
+}
